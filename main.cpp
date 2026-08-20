@@ -1,9 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <ctime>
 #include "bankAccount.h"
+#include <iomanip>
 using namespace std;
 
 void menu();
+void displayKeypad();
+void displayClock();
 
 void showAllAccounts(const vector<bankAccount>& accounts) {
     if (accounts.empty()) {
@@ -17,35 +21,37 @@ void showAllAccounts(const vector<bankAccount>& accounts) {
              << " | Account #" << accounts[i].accountNum
              << " | Balance: $" << accounts[i].getBalance() << "\n";
     }
-}
+};
 
 int main() {
     int choice;
     vector<bankAccount> accounts;
     int selectedAccountIndex = -1;
 
-    while (true) {
-        menu();
-        cout << "Enter your choice:";
+    displayClock();
+    menu();
+
+    while (true) { // Display the menu at the start of each iteration.
+        cout << setfill(' ') << right << setw(36) << "Please enter choice(1-7): ";
         cin >> choice;
 
-        if (choice == 1) {
+        if (choice == 1){
             if (accounts.empty()) {
-                cout << "No accounts created yet.\n";
+                cout << setfill(' ') << right << setw(39) << "No accounts created yet. Try Again\n";
                 continue;
             }
 
             int accountNum;
-            cout << "Enter account number: ";
+            cout << setfill(' ') << right << setw(35) << "Enter account number: ";
             cin >> accountNum;
-
             bool found = false;
+
             for (size_t i = 0; i < accounts.size(); ++i) {
                 if (accounts[i].accountNum == accountNum) {
                     selectedAccountIndex = static_cast<int>(i);
                     found = true;
-                    cout << "Account selected: " << accounts[selectedAccountIndex].firstName
-                         << " " << accounts[selectedAccountIndex].lastName << "\n";
+                    cout << right << setw(35) << "Account selected: " << accounts[selectedAccountIndex].firstName;
+                    cout << " " << accounts[selectedAccountIndex].lastName << "\n";
                     break;
                 }
             }
@@ -120,14 +126,42 @@ int main() {
     }
 
     return 0;
+};
+
+void displayClock() {
+    time_t currentTime = time(nullptr);
+    tm* localTime = localtime(&currentTime);
+
+    cout << '\n' << setw(20) << "Current time: "
+         << put_time(localTime, "%Y-%m-%d %H:%M:%S") << "\n";
 }
 
 void menu() {
-    cout << "\n1. Select Account\n";
-    cout << "2. Create New Account\n";
-    cout << "3. Deposit\n";
-    cout << "4. Withdraw\n";
-    cout << "5. Check Balance\n";
-    cout << "6. View All Accounts\n";
-    cout << "7. Exit\n";
-}
+    cout << "\n" << setw(20) << setfill('*') << '*';
+    cout << setfill('*') << "CHASE" << setw(20) << setfill('*') << "*\n";
+    cout << setfill(' ');
+
+    cout << right;
+    cout << setw(31) << "1. Select Account" << '\n';
+    cout << setw(33) << "2. Create New Account" << '\n';
+    cout << setw(27) << "3. Deposit" << '\n';
+    cout << setw(28) << "4. Withdraw" << '\n';
+    cout << setw(30) << "5. Check Balance" << '\n';
+    cout << setw(32) << "6. View All Accounts" << '\n';
+    cout << setw(26) << "7. Exit" << '\n';
+    cout << setw(45) << setfill('*') << '*';
+
+    displayKeypad(); // displays keypad
+};
+
+void displayKeypad() { // visual keypad
+    cout << "\n             +-----+-----+-----+\n";
+    cout << "             |  1  |  2  |  3  |\n";
+    cout << "             +-----+-----+-----+\n";
+    cout << "             |  4  |  5  |  6  |\n";
+    cout << "             +-----+-----+-----+\n";
+    cout << "             |  7  |  8  |  9  |\n";
+    cout << "             +-----+-----+-----+\n";
+    cout << "             |  C  |  0  |Enter|\n";
+    cout << "             +-----+-----+-----+\n";
+};
