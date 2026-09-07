@@ -1,0 +1,8 @@
+================================================================================
+Linker Errors
+Generated: 2026-09-07T23:11:38.231Z
+Total Errors: 1
+================================================================================
+
+[LNK1168] (MSVC)
+cannot open C:\Users\ericp\Desktop\Bank-Account-Project\build\Debug\bankAccount.exe for writing [C:\Users\ericp\Desktop\Bank-Account-Project\build\bankAccount.vcxproj]
