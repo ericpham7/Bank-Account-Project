@@ -62,13 +62,13 @@ int main() {
             string newFirstName, newLastName;
             double startingBalance;
 
-            cout << "Enter account number: ";
+            cout << setw(32) << right << "Enter account number:";
             cin >> newAccountNum;
-            cout << "Enter first name: ";
+            cout << setw(32) << right << "Enter first name: ";
             cin >> newFirstName;
-            cout << "Enter last name: ";
+            cout << setw(32) << right << "Enter last name: ";
             cin >> newLastName;
-            cout << "Enter starting balance: $";
+            cout << setw(32) << right << "Enter starting balance: $";
             cin >> startingBalance;
 
             accounts.push_back(bankAccount(newAccountNum, newFirstName, newLastName, startingBalance));
