@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/ericp/Desktop/Bank-Account-Project/build/cmake_install.cmake"
+		"/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

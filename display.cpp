@@ -16,18 +16,18 @@ void displayClock() {
     cout << setfill(' '); 
 
     // Display the current time
-    cout << setw(20) << right << "Current time: ";
+    cout << left << setw(20) << "Current time: ";
     cout << put_time(localTime, "%Y-%m-%d %H:%M:%S") << "\n";
 };
 
 void menu() {
-    cout << setw(31) << right << "1. Select Account" << '\n';
-    cout << setw(33) << right << "2. Create New Account" << '\n';
-    cout << setw(27) << right << "3. Deposit" << '\n';
-    cout << setw(28) << right << "4. Withdraw" << '\n';
-    cout << setw(30) << right << "5. Check Balance" << '\n';
-    cout << setw(32) << right << "6. View All Accounts" << '\n';
-    cout << setw(26) << right << "7. Exit" << '\n';
+    cout << left << setw(31) << "1. Select Account" << '\n';
+    cout << left << setw(31) << "2. Create New Account" << '\n';
+    cout << left << setw(31) << "3. Deposit" << '\n';
+    cout << left << setw(31) << "4. Withdraw" << '\n';
+    cout << left << setw(31) << "5. Check Balance" << '\n';
+    cout << left << setw(31) << "6. View All Accounts" << '\n';
+    cout << left << setw(31) << "7. Exit" << '\n';
 
     cout << setw(45) << setfill('*') << '*'; // End of menu border
 

@@ -62,19 +62,19 @@ int main() {
             string newFirstName, newLastName;
             double startingBalance;
 
-            cout << setw(32) << right << "Enter account number:";
+            cout << right << setw(32) << "Enter account number: ";
             cin >> newAccountNum;
-            cout << setw(32) << right << "Enter first name: ";
+            cout << right << setw(28) << "Enter first name: ";
             cin >> newFirstName;
-            cout << setw(32) << right << "Enter last name: ";
+            cout << right << setw(27) << "Enter last name: ";
             cin >> newLastName;
-            cout << setw(32) << right << "Enter starting balance: $";
+            cout << right << setw(35) << "Enter starting balance: $";
             cin >> startingBalance;
 
             accounts.push_back(bankAccount(newAccountNum, newFirstName, newLastName, startingBalance));
             selectedAccountIndex = static_cast<int>(accounts.size()) - 1;
 
-            cout << "New account created successfully!\n";
+            cout << "\nNew account created successfully!\n";
             cout << "Account Holder: " << accounts[selectedAccountIndex].firstName << " "
                  << accounts[selectedAccountIndex].lastName << "\n";
             cout << "Account Number: " << accounts[selectedAccountIndex].accountNum << "\n";

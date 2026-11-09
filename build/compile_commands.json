@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build",
+  "command": "/usr/bin/clang++ -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/main.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/main.cpp",
+  "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/main.cpp",
+  "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build",
+  "command": "/usr/bin/clang++ -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/bankAccount.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/bankAccount.cpp",
+  "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/bankAccount.cpp",
+  "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/bankAccount.cpp.o"
+},
+{
+  "directory": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build",
+  "command": "/usr/bin/clang++ -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/display.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/display.cpp",
+  "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/display.cpp",
+  "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/display.cpp.o"
+}
+]
