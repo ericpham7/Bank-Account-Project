@@ -1,7 +1,7 @@
 
 #include "bankAccount.h"
-#include <iostream>
-using namespace std;
+#include <cmath>
+
 bankAccount::bankAccount() {
     this->accountNum = 0;
     this->balance = 0.0;
@@ -10,7 +10,7 @@ bankAccount::bankAccount() {
     this->pin = "";
     this->expirationDate = "";
 }
-bankAccount::bankAccount(int accNum, string fName, std::string lName, double startBalance) {
+bankAccount::bankAccount(int accNum, std::string fName, std::string lName, double startBalance) {
     this->accountNum = accNum;
     this->firstName = fName;
     this->lastName = lName;
@@ -19,28 +19,24 @@ bankAccount::bankAccount(int accNum, string fName, std::string lName, double sta
     this->balance = startBalance;
 }
 
-void bankAccount::withdraw(double amount) {
-    if (amount <= 0) {
-        cout << "Invalid amount.\n";
+bool bankAccount::withdraw(double amount) {
+    if (!std::isfinite(amount) || amount <= 0 || amount > balance) {
+        return false;
     }
-    else if (amount > balance) {
-        cout << "Insufficient funds. Please try again.\n";
-    }
-    else {
-        balance -= amount;
-        cout << "Withdraw: $" << amount << '\n';
-        cout << "Balance Updated: $" << balance << '\n';
-    }
+
+    balance -= amount;
+    return true;
 }
-void bankAccount::deposit(double amount) {
-    if (amount <= 0) {
-        cout << "Invalid amount.\n";
+
+bool bankAccount::deposit(double amount) {
+    if (!std::isfinite(amount) || amount <= 0) {
+        return false;
     }
-    else {
-        this->balance += amount;
-        cout << "New Balance: $" << this->balance << '\n';
-    }
+
+    this->balance += amount;
+    return true;
 }
+
 double bankAccount::getBalance() const {
     return balance;
 }

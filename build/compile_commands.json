@@ -1,20 +1,20 @@
 [
 {
   "directory": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build",
-  "command": "/usr/bin/clang++ -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/main.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/main.cpp",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/lib/QtCore.framework/Headers -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/main.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/main.cpp",
   "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/main.cpp",
   "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/main.cpp.o"
 },
 {
   "directory": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build",
-  "command": "/usr/bin/clang++ -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/bankAccount.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/bankAccount.cpp",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/lib/QtCore.framework/Headers -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/bankAccount.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/bankAccount.cpp",
   "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/bankAccount.cpp",
   "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/bankAccount.cpp.o"
 },
 {
   "directory": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build",
-  "command": "/usr/bin/clang++ -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/display.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/display.cpp",
-  "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/display.cpp",
-  "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/display.cpp.o"
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ericpham/Documents/GitHub/Bank-Account-Project/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/lib/QtCore.framework/Headers -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -g -std=gnu++17 -arch arm64 -o CMakeFiles/bankAccount.dir/bankingWindow.cpp.o -c /Users/ericpham/Documents/GitHub/Bank-Account-Project/bankingWindow.cpp",
+  "file": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/bankingWindow.cpp",
+  "output": "/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/CMakeFiles/bankAccount.dir/bankingWindow.cpp.o"
 }
 ]

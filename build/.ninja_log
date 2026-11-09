@@ -1,5 +1,11 @@
 # ninja log v7
 1	320	1789809559838441017	CMakeFiles/bankAccount.dir/bankAccount.cpp.o	c5ffcc7f7212744c
 5	478	1789809742014609884	CMakeFiles/bankAccount.dir/display.cpp.o	4d881ddbba69d285
-14	343	1789810163091099579	CMakeFiles/bankAccount.dir/main.cpp.o	7706f51918720030
-344	381	1789810163421254467	bankAccount	7a82c669f4ac4a6e
+3	378	1794265734354835596	CMakeFiles/bankAccount.dir/main.cpp.o	7706f51918720030
+379	565	1794265734730878997	bankAccount	7a82c669f4ac4a6e
+4	1578	1794266124935830865	build.ninja	73574cb715faf5e
+4	1578	1794266124935830865	/Users/ericpham/Documents/GitHub/Bank-Account-Project/build/cmake_install.cmake	73574cb715faf5e
+4	1094	1794266124975665254	CMakeFiles/bankAccount.dir/main.cpp.o	c413c52ccf67b8b0
+4	1357	1794266124976089920	CMakeFiles/bankAccount.dir/bankingWindow.cpp.o	d4100821892685aa
+4	194	1794266142095422025	CMakeFiles/bankAccount.dir/bankAccount.cpp.o	f87a31f8ac1bc155
+195	321	1794266142285811349	bankAccount.app/Contents/MacOS/bankAccount	79ba228e3a05b22b
